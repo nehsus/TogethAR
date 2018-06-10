@@ -3,6 +3,8 @@
 *.DS_STORE
 *.png
 local.properties
+.gitignore
+.gitattributes
 
 # Ignore Gradle GUI config
 gradle-app.setting
