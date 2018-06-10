@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_chat_view"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription">
+
+    <FrameLayout
+        android:id="@+id/large_video_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/video_list"
+        android:background="#D9090B0F"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        tools:listitem="@layout/item_video_container" />
+
+    <TextView
+        android:id="@+id/quick_tips_when_use_agora_sdk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/video_list"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical|start"
+        android:textColor="@android:color/darker_gray"
+        android:text="Waiting for remote users.."/>
+
+    <LinearLayout
+        android:id="@+id/action_slider"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/video_list"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:onClick="onLocalVideoMuteClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_voice" />
+
+        <ImageView
+            android:id="@+id/mute"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:onClick="onLocalAudioMuteClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_mute" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:onClick="onSwitchCameraClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_switch_camera" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:onClick="onNotesClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_notes" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:onClick="onAddCallClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_add_person" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:onClick="onEncCallClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_end_call" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

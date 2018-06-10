@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.NotesActivity">
+
+    <TextView
+        android:id="@+id/on_call_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:padding="8dp"
+        android:text="Tap to return to call"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:onClick="tapToReturnClicked"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/notes_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="Enter your text"
+        android:padding="8dp" />
+
+</LinearLayout>

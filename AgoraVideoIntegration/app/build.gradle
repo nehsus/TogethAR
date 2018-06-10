@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "io.agora.agoravideodemo"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    dataBinding.enabled true
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.7.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-firestore:17.0.1'
+    implementation 'com.github.joielechong:countrycodepicker:2.1.5'
+    implementation 'com.github.nitrico.lastadapter:lastadapter:2.3.0'
+    implementation 'com.chibatching.kotpref:kotpref:2.5.0'
+    implementation 'com.chibatching.kotpref:initializer:2.5.0'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    kapt 'com.android.databinding:compiler:3.1.2'
+    implementation 'com.jakewharton.timber:timber:4.7.0'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+}
+apply plugin: 'com.google.gms.google-services'
