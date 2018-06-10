@@ -3,7 +3,11 @@
 TogethAR is a location-aware platform to create and collaborate in virtual-reality spaces.
 Developed using HyperTrack, Oculus GO and AndroidWear.
 
-#VR Parallel Dimensions
+#VR Parallel Dimensions#
+
+![]https://media.giphy.com/media/9Vz3hGH80x6cvPzdql/giphy.gif
+
+The above .gif is an a-frame demo shown on the web. TogethAR is developed on an Oculus go with 3dof tracking.
 
 TogethAR was developed to contribute and maintain integrity among members of a collaborative group, in Virtual Reality. We used HyperTrack to be able to determine users based on their location, described by a specific Unique ID.
 When a member is potentially "close" to a user; Geofencing calls on the hypertrack API, and with indoor-positional tracking, we can triangulate the exact location of the nearby member, and upon request, they are seamlessly transferred into a virtual reality space!
