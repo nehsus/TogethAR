@@ -3,9 +3,9 @@
 TogethAR is a location-aware platform to create and collaborate in virtual-reality spaces.
 Developed using HyperTrack, Oculus GO and AndroidWear.
 
-#VR Parallel Dimensions#
+#VR Parallel Dimensions
 
-![]https://media.giphy.com/media/9Vz3hGH80x6cvPzdql/giphy.gif
+![](https://media.giphy.com/media/9Vz3hGH80x6cvPzdql/giphy.gif)
 
 The above .gif is an a-frame demo shown on the web. TogethAR is developed on an Oculus go with 3dof tracking.
 
